@@ -5,5 +5,5 @@ Architecture: iphoneos-arm64
 Description: Open-source local network inventory and reversible access control for authorized rootless jailbreak environments.
 Maintainer: emp0ry <avagyanerik13@gmail.com>
 Author: emp0ry
-Section: Utilities
+Section: Applications
 Depends: firmware (>= 16.0), network-cmds
