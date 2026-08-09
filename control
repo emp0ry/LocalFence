@@ -1,6 +1,6 @@
 Package: com.emp0ry.localfence
 Name: LocalFence
-Version: 0.2.0
+Version: 0.2.1
 Architecture: iphoneos-arm64
 Description: Open-source local network inventory and reversible access control for authorized rootless jailbreak environments.
 Maintainer: emp0ry <avagyanerik13@gmail.com>

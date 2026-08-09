@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+- Use Havoc's valid `Applications` package section.
+- Rebuild the rootless release package with synchronized app and daemon
+  version metadata.
+
 ## 0.2.0
 
 - Add offline OUI vendor lookup for MA-L, MA-M, and MA-S assignments.

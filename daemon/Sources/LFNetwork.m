@@ -407,7 +407,7 @@ static BOOL LFNetworkContextsMatch(const LFNetworkContext *first,
     return @{
         @"network" : [self networkDictionary:&context],
         @"blocked" : [self blockedDeviceArray],
-        @"daemonVersion" : @"0.2.0",
+        @"daemonVersion" : @"0.2.1",
     };
 }
 
