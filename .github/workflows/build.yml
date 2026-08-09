@@ -10,6 +10,8 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
+      - name: Install build dependencies
+        run: brew install ldid
       - name: Install Theos
         run: git clone --recursive https://github.com/theos/theos.git "$RUNNER_TEMP/theos"
       - name: Run tests
