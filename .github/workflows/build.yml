@@ -1,0 +1,24 @@
+name: Build rootless package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Theos
+        run: git clone --recursive https://github.com/theos/theos.git "$RUNNER_TEMP/theos"
+      - name: Run tests
+        run: ./scripts/test.sh
+      - name: Build package
+        env:
+          THEOS: ${{ runner.temp }}/theos
+        run: make clean package FINALPACKAGE=1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LocalFence-rootless
+          path: packages/*.deb

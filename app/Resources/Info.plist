@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>LocalFence</string>
+    <key>CFBundleExecutable</key>
+    <string>LocalFence</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.emp0ry.localfence</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>LocalFence</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.2.0</string>
+    <key>CFBundleVersion</key>
+    <string>3</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>MinimumOSVersion</key>
+    <string>16.0</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>LocalFence discovers and manages devices on a private network you own or administer.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>LocalFence uses location permission only to access Wi-Fi network information required by iOS.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_airplay._tcp</string>
+        <string>_raop._tcp</string>
+        <string>_companion-link._tcp</string>
+        <string>_apple-mobdev2._tcp</string>
+        <string>_googlecast._tcp</string>
+        <string>_androidtvremote2._tcp</string>
+        <string>_smb._tcp</string>
+        <string>_rdp._tcp</string>
+        <string>_ssh._tcp</string>
+        <string>_workstation._tcp</string>
+        <string>_device-info._tcp</string>
+        <string>_http._tcp</string>
+        <string>_ipp._tcp</string>
+        <string>_printer._tcp</string>
+        <string>_hap._tcp</string>
+        <string>_spotify-connect._tcp</string>
+    </array>
+    <key>CFBundleIconFiles</key>
+    <array>
+        <string>AppIcon60x60</string>
+        <string>AppIcon76x76</string>
+    </array>
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>AppIcon60x60</string>
+            </array>
+        </dict>
+    </dict>
+    <key>CFBundleIcons~ipad</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>AppIcon60x60</string>
+                <string>AppIcon76x76</string>
+                <string>AppIcon83.5x83.5</string>
+            </array>
+        </dict>
+    </dict>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+</dict>
+</plist>

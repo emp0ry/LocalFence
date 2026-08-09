@@ -1,0 +1,8 @@
+.DS_Store
+.theos/
+packages/
+obj/
+*.deb
+build/
+DerivedData/
+

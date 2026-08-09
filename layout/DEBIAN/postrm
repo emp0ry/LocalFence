@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f /var/jb/var/run/localfence.sock
+rm -f /var/mobile/Library/LocalFence/localfence.sock
+
+exit 0

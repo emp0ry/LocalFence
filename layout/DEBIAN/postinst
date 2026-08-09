@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+PLIST=/var/jb/Library/LaunchDaemons/com.emp0ry.localfenced.plist
+
+mkdir -p /var/jb/var/run /var/jb/var/log /var/mobile/Library/LocalFence
+rm -f /var/jb/var/run/localfence.sock
+chown mobile:mobile /var/mobile/Library/LocalFence
+chmod 0700 /var/mobile/Library/LocalFence
+chmod 0755 /var/jb/usr/libexec/localfence/localfenced /var/jb/usr/bin/localfencectl
+chmod 0644 "$PLIST"
+chown root:wheel /var/jb/usr/libexec/localfence/localfenced /var/jb/usr/bin/localfencectl "$PLIST"
+
+launchctl bootout system/com.emp0ry.localfenced >/dev/null 2>&1 || true
+launchctl bootout user/501/com.emp0ry.localfenced >/dev/null 2>&1 || true
+launchctl bootstrap system "$PLIST" >/dev/null 2>&1 || launchctl load "$PLIST" >/dev/null 2>&1 || true
+
+killall LocalFence >/dev/null 2>&1 || true
+
+if command -v uicache >/dev/null 2>&1; then
+    uicache -p /var/jb/Applications/LocalFence.app >/dev/null 2>&1 || true
+fi
+
+exit 0

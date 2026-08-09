@@ -1,0 +1,11 @@
+#!/bin/sh
+
+/var/jb/usr/bin/localfencectl stop >/dev/null 2>&1 || true
+launchctl bootout system/com.emp0ry.localfenced >/dev/null 2>&1 || true
+launchctl bootout user/501/com.emp0ry.localfenced >/dev/null 2>&1 || true
+launchctl unload /var/jb/Library/LaunchDaemons/com.emp0ry.localfenced.plist >/dev/null 2>&1 || true
+killall LocalFence >/dev/null 2>&1 || true
+rm -f /var/jb/var/run/localfence.sock
+rm -f /var/mobile/Library/LocalFence/localfence.sock
+
+exit 0
