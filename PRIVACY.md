@@ -61,4 +61,4 @@ data or network traffic outside LocalFence's control.
 
 ## Contact
 
-Questions about this policy may be sent to `avagyanerik13@gmail.com`.
+Questions about this policy may be sent to `emp0rynew@gmail.com`.
