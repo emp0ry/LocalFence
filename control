@@ -3,7 +3,7 @@ Name: LocalFence
 Version: 0.2.1
 Architecture: iphoneos-arm64
 Description: Open-source local network inventory and reversible access control for authorized rootless jailbreak environments.
-Maintainer: emp0ry <avagyanerik13@gmail.com>
+Maintainer: emp0ry <emp0rynew@gmail.com>
 Author: emp0ry
 Section: Applications
 Depends: firmware (>= 16.0), network-cmds
